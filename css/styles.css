@@ -27,11 +27,26 @@ body {
 
 .header {
     position: relative;
-    min-height: 100vh;
+
 }
 
 .header__top {
     
+}
+
+.header__news {
+    display: flex;
+    justify-content: center;
+    background-color: #7F56D9;
+    padding: 8px 0;
+}
+.header__news-text {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
 }
 
 .border {
@@ -40,6 +55,7 @@ body {
     color: #E4E7EC;
     position: absolute;
 }
+
 
 .nav {
     display: flex;
@@ -84,10 +100,32 @@ body {
     margin-right: 66px;;
 }
 
+@media (max-width: 991.98px) {
+    .nav__list {
+        column-gap: 16px;
+    }
+        
+}
+
+@media (max-width: 767.98px) {
+    .nav__list {
+        display: none;
+    }
+
+    .btn {
+        margin-right: 0px;
+    }
+}
+
 /* Header__content */
 
 .header__content {
     padding-top: 86px;
+    display: flex;
+}
+
+.header__content-text {
+    flex: 1 1 993px;
 }
 
 .header__title {
@@ -97,41 +135,83 @@ body {
     color: #101828;
     margin: 0 auto;
     max-width: 961px;
-    width: 67vw;
-    position: absolute;
     z-index: 1;
 }
 
 .header__text {
-    margin-top: 330px;
+    margin-top: 60px;
     margin-bottom: 0;
-    position: absolute;
     z-index: 1;
     max-width: 376px;
-    width: 26vw;
     font-family: 'Inter';
     font-weight: 400;
     color: #667085;
 }
 
 .header__image {
-    float: right;
-    max-width: 800px;
-    width: 55vw;
-    height: calc(width * 0.875);
-    position: relative;
     margin-top: 138px;
+    margin-left: -50%;
+    flex: 1 1 1376px;
+    z-index: -1;
 }
 
-.arrow {
-    position: absolute;
-    z-index: 1;
-    max-width: 600px;
-    width: 41.7vw;
-    max-height: 304px;
-    height: calc(width * 0.506);
-    margin-top: 360px;
-    left: 10.03%;
+@media (max-width: 1200px) {
+    .header__title {
+        
+        width: 120%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .header__content {
+        padding-top: 45px;
+    }
+
+    .header__title {
+        font-size: 50px;
+        width: 160%;
+    }
+
+    .header__text {
+        max-width: 250px;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    .header__content {
+        padding-top: 15px;
+    }
+
+    .header__image {
+        margin-top: 90px;
+    }
+    .header__title {
+        font-size: 35px;
+
+    }
+
+    .header__text {
+        max-width: 250px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 550px) {
+    .header__image {
+        margin-top: 60px;
+        width: 90%;
+    }
+    .header__title {
+        font-size: 25px;
+    }
+
+    .header__text {
+        font-size: 14px;
+        max-width: 175px;
+
+    }
 }
 
 .projects {
