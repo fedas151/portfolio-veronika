@@ -376,7 +376,7 @@ body {
 
 @media (max-width: 555px) {
     .about__btn {
-        margin-left: 11vw;
+        margin-left: 10vw;
     }
     .about__text-top{
         width: 75%;
@@ -397,6 +397,7 @@ body {
         margin-left: 6vw;
     }
 }
+
 
 /* Reviews */
 
@@ -505,6 +506,8 @@ body {
 
 .footer {
     margin-top: 12vw;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer__header {
@@ -527,9 +530,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 auto;
     margin-top: 12vw;
     border-top: 1px solid #E4E7EC;
     padding: 66px 32px 0 32px;
+    max-width: 1440px;
+    width: 100%;
 }
 
 .footer__logo {
