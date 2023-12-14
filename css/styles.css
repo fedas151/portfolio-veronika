@@ -365,6 +365,7 @@ body {
     background-color: #7F56D9;
     color: #ffffff;
     margin-left: 26.3%;
+    white-space: nowrap;
 }
 
 @media (max-width: 768px) {
